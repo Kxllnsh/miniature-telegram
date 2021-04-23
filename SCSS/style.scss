@@ -1,0 +1,429 @@
+$main-background: hsl(207, 100%, 98%);
+$footer-background: hsl(192, 100%, 9%);
+$primary-pink: hsl(321, 100%, 78%);
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  'Open Sans', sans-serif;
+}
+html{
+  font-size: 18px;
+}
+body{
+
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+
+//navbar styling
+.nav-bar{
+  display: flex;
+  padding: 1em 3em;
+  width: 100%;
+  min-height: 10vh;
+  background: $main-background;
+  align-items: center;
+  justify-content: space-between;
+
+  .button{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5rem;
+    outline: none;
+    border: 2px $primary-pink solid;
+    color: $primary-pink;
+    background: transparent;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover{
+      opacity: .5;
+    }
+  }
+}
+//landing section styling
+.l-section{
+  width: 100%;
+  position: relative;
+  padding:7em 3em 1em 3em;
+  min-height: 90vh;
+  background: $main-background;
+
+  .l-context{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    text-align: center;
+    z-index: 1;
+
+    h1{
+      margin-bottom: .5em;
+    }
+
+    p{
+      margin-bottom: .5em;
+      width: 50%;
+
+    }
+
+    .l-btn{
+      width: 12rem;
+      height: 3rem;
+      border-radius: 5rem;
+      margin-top: .5em;
+      outline: none;
+      border: 2px $primary-pink solid;
+      color: white;
+      cursor: pointer;
+      background: $primary-pink;
+    }
+  }
+  .l-image{
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+    img{
+      width: 50rem;
+    }
+  }
+
+  .l-stats{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3em;
+
+    .stats{
+      h1{
+        font-size: 4rem;
+      }
+
+      p{
+        text-align: center;
+      }
+    }
+  }
+
+  .curve1{
+    width: 100%;
+    position: absolute;
+    bottom: -8rem;
+    left: 0;
+    z-index: -1;
+
+    img{
+      min-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+//together section styling
+.together-section{
+  padding: 6em 3em;
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+
+  .together-context{
+    h1{
+      margin-bottom: .5em;
+    }
+  }
+}
+
+.your-users-image{
+   img{
+     width: 100%;
+   }
+ }
+
+//conversations section styling
+.conversations-section{
+  padding: 5em 3em;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .conversations-context{
+    h1{
+      margin-bottom: .5em;
+    }
+  }
+}
+
+//your users section styling
+.your-users-section{
+  padding: 5em 3em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .your-users-context{
+    h1{
+      margin-bottom: .5em;
+    }
+  }
+
+}
+
+//contact section styling
+.contact-section{
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .contact-btn{
+    width: 12rem;
+    height: 3rem;
+    border-radius: 5rem;
+    margin-top: .5em;
+    outline: none;
+    border: 2px $primary-pink solid;
+    color: white;
+    cursor: pointer;
+    background: $primary-pink;
+  }
+
+  .curve2{
+    width: 100%;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    z-index: -1;
+
+    img{
+      min-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+//footer styling
+.footer-container{
+  padding: 5em 3em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: $footer-background;
+  color: white;
+}
+
+.footer-section{
+  width: 50%;
+
+  .footer-logo{
+
+    img{
+      filter: invert(1);
+      margin-bottom: .5em;
+    }
+  }
+
+  .footer-context{
+    width: 70%;
+    margin-bottom: .5em;
+  }
+  .footer-contact-info{
+    margin-top: 1em;
+
+    p{
+      margin: .5em 0;
+
+      img{
+        margin-right: .5em;
+      }
+    }
+  }
+}
+//newsletter styling
+.newsletter-section{
+  width:40%;
+
+  .newsletter-context{
+    h1{
+      margin-bottom: .5em;
+    }
+  }
+
+  .contact-form{
+    margin-top: 1em;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+
+    .inputs{
+      padding: .4em 0;
+      width: 20rem;
+      height: 100%;
+
+      input{
+        width: 100%;
+        min-height: 100%;
+        border: none;
+        outline: none;
+        border-radius: .2rem;
+      }
+    }
+    .button-wrapper{
+      padding: .4em 0;
+      width: 10rem;
+      min-height: 100%;
+      margin-left: 1em;
+
+      button{
+        width: 100%;
+        border-radius: .2rem;
+        min-height: 100%;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background: $primary-pink;
+        color: white;
+      }
+    }
+  }
+  .error-message{
+    color: red;
+    font-size: 1rem;
+    visibility: hidden;
+    transition: visibility .3s;
+  }
+}
+
+//mobile styling
+@media screen and (max-width: 1024px){
+  //landing section
+  .l-section{
+    .l-context{
+      p{
+        width: 100%;
+      }
+    }
+    .l-image{
+      img{
+        width: 100%;
+      }
+    }
+
+    .l-stats{
+      align-items: center;
+      flex-direction: column;
+
+      .stats{
+        margin: 3em 0;
+      }
+    }
+  }
+
+  .together-section,
+  .conversations-section,
+  .your-users-section{
+    flex-direction: column;
+  }
+
+  .together-context,
+  .conversations-context,
+  .your-users-context {
+    margin-bottom: 2em !important;
+  }
+
+  //footer
+  .footer-container{
+    flex-direction: column;
+
+    .footer-section{
+      width: 100%;
+      margin-bottom: 2em;
+
+      .footer-context{
+        width: 100%;
+      }
+    }
+
+    .newsletter-section{
+      width: 100%;
+
+      .contact-form{
+        flex-direction: column;
+        width: 100%;
+
+        .inputs{
+          width: 100%;
+        }
+        .button-wrapper{
+          width: 100%;
+
+          button{
+            width: 40%;
+            float: right !important;
+          }
+        }
+
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  html{
+    font-size: 14px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    font-size: 1.2rem;
+  }
+
+  .nav-bar{
+    padding: 1em 1.5em;
+  }
+  .logo{
+    img{
+      width: 7rem;
+    }
+  }
+  .l-section{
+    padding:7em 1.5em 1em 1.5em;
+  }
+
+  .footer-container{
+    padding: 5em 1.5em;
+  }
+  .footer-section{
+    .footer-logo{
+      img{
+        width: 7rem;
+      }
+    }
+  }
+}
